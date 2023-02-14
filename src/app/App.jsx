@@ -1,5 +1,5 @@
 // import "./App.css";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import DesktopNav from "../components/Header/nav";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header></Header>
+        {/* <Header></Header> */}
         <DesktopNav></DesktopNav>
         {/* <Routes>
           <Route exact path="/#home"></Route>
