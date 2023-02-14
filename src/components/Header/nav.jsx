@@ -33,15 +33,8 @@ const useStyles = makeStyles({
 });
 
 const DesktopNav = () => {
-  // const [tabValue, setTabValue] = useState(0);
   const [value, setValue] = useState(0);
-  // const location = useLocation();
   const classes = useStyles();
-
-  // useEffect(() => {
-  //   setValue(links.findIndex((link) => link.path === location.pathname));
-  // }, [location.pathname]);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -51,11 +44,10 @@ const DesktopNav = () => {
       <Box
         sx={{
           display: "flex",
-          height: 70,
+          // height: 70,
           width: "100%",
           alignItems: "center",
           justifyContent: "space-between",
-          // margin: 2,
           backgroundColor: "white",
           overflow: "visible",
           position: "fixed",
@@ -76,10 +68,7 @@ const DesktopNav = () => {
                 component={HashLink}
                 to={path}
                 smooth
-                // sx={{
-                //   display: "block",
-                //   py: 4,
-                // }}
+                sx={{ py: 3.5 }}
               />
             ))}
           </Tabs>
