@@ -1,11 +1,9 @@
 import * as React from "react";
-import { useEffect } from "react";
+
 import { useState } from "react";
 import { Tabs, Tab, Button, Box } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
 import { makeStyles } from "@mui/styles";
-import { useLocation } from "react-router-dom";
-import "./header.css";
 
 const links = [
   {
@@ -50,18 +48,18 @@ const DesktopNav = () => {
 
   return (
     <header>
-      <div className="imgHeader"></div>
       <Box
         sx={{
           display: "flex",
           height: 70,
           width: "100%",
           alignItems: "center",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
           // margin: 2,
           backgroundColor: "white",
           overflow: "visible",
           position: "fixed",
+          zIndex: 1000,
           boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.03)",
         }}
       >
@@ -92,6 +90,7 @@ const DesktopNav = () => {
           sx={{
             boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.03)",
             backgroundColor: "#FFA600",
+            m: 2,
           }}
         >
           Contact me

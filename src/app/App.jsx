@@ -1,10 +1,16 @@
 // import "./App.css";
 // import Header from "../components/Header";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Aos from "aos";
+import { useEffect } from "react";
+import { BrowserRouter } from "react-router-dom";
 import DesktopNav from "../components/Header/nav";
 import Profile from "../components/home";
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
     <>
       <BrowserRouter>

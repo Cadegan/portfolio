@@ -1,5 +1,3 @@
-import "./header.css";
-
 import React from "react";
 // import { HashLink } from "react-router-hash-link";
 
