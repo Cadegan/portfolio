@@ -34,7 +34,7 @@ const useStyles = makeStyles({
   },
 });
 
-function DesktopNav() {
+const DesktopNav = () => {
   // const [tabValue, setTabValue] = useState(0);
   const [value, setValue] = useState(0);
   // const location = useLocation();
@@ -54,7 +54,7 @@ function DesktopNav() {
       <Box
         sx={{
           display: "flex",
-          height: 80,
+          height: 70,
           width: "100%",
           alignItems: "center",
           justifyContent: "space-around",
@@ -99,5 +99,5 @@ function DesktopNav() {
       </Box>
     </header>
   );
-}
+};
 export default DesktopNav;

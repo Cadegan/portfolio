@@ -2,6 +2,7 @@
 // import Header from "../components/Header";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import DesktopNav from "../components/Header/nav";
+import Profile from "../components/home";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <Route exact path="/#services"></Route>
           <Route exact path="/#testimonial"></Route>
         </Routes> */}
-        <>
+        <main>
+          <Profile></Profile>
           <section id="home">
             <h1>About</h1>
             <p>
@@ -72,7 +74,7 @@ function App() {
               et. Enim, nostrum illo.
             </p>
           </section>
-        </>
+        </main>
       </BrowserRouter>
     </>
   );
