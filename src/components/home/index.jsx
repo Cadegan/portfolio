@@ -49,17 +49,16 @@ const Profile = () => {
         <div className="profil-img_wrapper">
           <img src={profil} alt="Profil" />
         </div>
-        {/* <div data-aos="fade-up" className="developper">
-          <div>
-            <h4>Web Developper</h4>
-          </div>
+        <div className="developper">
+          <h4>Web Developper</h4>
         </div>
-        <div data-aos="fade-down" className="freelancer">
-          <div>
-            <h4>Freelancer</h4>
+        <div className="iAmFree">
+          <div className="pictoValid"></div>
+          <div className="textWrapper">
+            <h4>Available</h4>
             <p>You can hire me now</p>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
