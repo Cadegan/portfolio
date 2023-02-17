@@ -1,10 +1,11 @@
 import { Button } from "@mui/material";
 import profil from "../../assets/profil.jpg";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const Profile = () => {
   return (
     <section id="Home" className="home">
-      <div data-aos="fade-right" className="catch-phrase">
+      <div className="catch-phrase">
         <h1>
           Hi , I am <span>Jean-Charles</span> <br /> Front-End Developper
         </h1>
@@ -29,15 +30,14 @@ const Profile = () => {
             Download CV
           </Button>
           <Button
-            variant="outlined"
+            variant="contained"
+            color="warning"
             sx={{
               boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.03)",
               backgroundColor: "#43597d",
-              borderColor: "#43597d",
               color: "#FFFFFF",
               "&:hover": {
-                color: "#43597d",
-                borderColor: "#43597d",
+                backgroundColor: "#FFA600",
               },
             }}
           >
@@ -50,10 +50,19 @@ const Profile = () => {
           <img src={profil} alt="Profil" />
         </div>
         <div className="developper">
-          <h4>Web Developper</h4>
+          <CheckCircleIcon
+            sx={{ color: "#43597d", mx: 1, fontSize: 30 }}
+            className="iAmFree-picto"
+          ></CheckCircleIcon>
+          <div className="textWrapper">
+            <h4>Web Developper</h4>
+          </div>
         </div>
         <div className="iAmFree">
-          <div className="pictoValid"></div>
+          <CheckCircleIcon
+            sx={{ color: "#FFA600", mx: 1, fontSize: 30 }}
+            className="iAmFree-picto"
+          ></CheckCircleIcon>
           <div className="textWrapper">
             <h4>Available</h4>
             <p>You can hire me now</p>
