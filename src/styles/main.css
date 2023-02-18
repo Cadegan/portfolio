@@ -104,7 +104,7 @@ main {
   width: 100%;
 }
 
-.buttons {
+.homeButtons {
   display: flex;
   justify-content: center;
   gap: 2rem;

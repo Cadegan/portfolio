@@ -63,6 +63,14 @@ const Profile = () => {
     },
   };
 
+  const motionProfilImgWrapper = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.3, delay: 0.1, ease: [0, 0, 0.58, 1] },
+    },
+  };
+
   return (
     <section id="Home" className="home">
       <div className="catch-phrase">
@@ -85,7 +93,7 @@ const Profile = () => {
         <p>
           I code Web Application and <br /> I love what I do
         </p>
-        <div className="buttons">
+        <div className="homeButtons">
           <Button
             variant="outlined"
             sx={{
@@ -119,9 +127,14 @@ const Profile = () => {
         </div>
       </div>
       <div className="profil">
-        <div className="profil-img_wrapper">
+        <motion.div
+          className="profil-img_wrapper"
+          variants={motionProfilImgWrapper}
+          initial="hidden"
+          animate="visible"
+        >
           <img src={profil} alt="Profil" />
-        </div>
+        </motion.div>
         <motion.div
           className="developper"
           variants={motionDevelopper}
