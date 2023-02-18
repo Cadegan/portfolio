@@ -3,6 +3,7 @@
 // import Aos from "aos";
 import { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
+import About from "../components/About";
 import DesktopNav from "../components/Header";
 import Profile from "../components/home";
 
@@ -23,8 +24,8 @@ function App() {
         </Routes> */}
         <main>
           <Profile></Profile>
-          <section id="home">
-            <h1>About</h1>
+          {/* <section id="about">
+            <h1>About me</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
               nam! Iure officia aut esse tempore accusantium explicabo? Corporis
@@ -41,7 +42,8 @@ function App() {
               consectetur, labore vero et ipsum. Officiis, ea vero. Praesentium,
               et. Enim, nostrum illo.
             </p>
-          </section>
+          </section> */}
+          <About></About>
           <section id="services">
             <h1>Services</h1>
             <p>

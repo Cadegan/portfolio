@@ -72,7 +72,7 @@ const Profile = () => {
   };
 
   return (
-    <section id="Home" className="home">
+    <section id="home" className="home">
       <div className="catch-phrase">
         <motion.h1
           variants={mentionCatchPhraseH1}

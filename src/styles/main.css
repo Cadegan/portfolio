@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 
 .logo {
@@ -46,6 +46,7 @@ main {
   align-items: center;
   margin-bottom: 4rem;
   position: relative;
+  height: 100vh;
 }
 
 .catch-phrase span {
@@ -54,14 +55,13 @@ main {
 
 .profil-img_wrapper {
   position: relative;
-  height: 300px;
-  width: 250px;
+  width: 300px;
 }
 .profil-img_wrapper::before {
   content: "";
   position: absolute;
   width: 95%;
-  height: 300px;
+  height: 400px;
   background: #FFA600;
   opacity: 0.6;
   top: 50%;
@@ -88,13 +88,13 @@ main {
 
 .iAmFree {
   display: flex;
-  top: 5%;
-  right: 31%;
+  top: 25%;
+  right: 34%;
 }
 
 .developper {
-  right: 4%;
-  bottom: 5%;
+  right: 7%;
+  bottom: 30%;
 }
 
 .profil-img_wrapper img {
@@ -114,4 +114,27 @@ main {
   border: 0px;
   margin: 0px;
   padding: 0px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+.heading::before,
+.heading::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: #e5c046;
+}
+
+.heading::before {
+  margin-right: 30px;
+}
+
+.heading::after {
+  margin-left: 30px;
 }/*# sourceMappingURL=main.css.map */
