@@ -1,14 +1,87 @@
-import { Button } from "@mui/material";
+import { Button, duration } from "@mui/material";
 import profil from "../../assets/profil.jpg";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { motion, useAnimation } from "framer-motion";
 
 const Profile = () => {
+  // const animationControls = useAnimation();
+
+  // async function sequence() {
+  //   await animationControls.start({ opacity: 1, duration: 2 });
+  //   await animationControls.start({
+  //     x: 100,
+  //     transition: { delay: 0.5, duration: 0.5 },
+  //   });
+  // }
+
+  // <motion.div
+  //   style={{
+  //     width: 150,
+  //     height: 150,
+  //     borderRadius: 30,
+  //     backgroundColor: "#fff",
+  //     opacity: 0,
+  //   }}
+  //   animate={animationControls}
+  //   // transition={{ duration: 1 }}
+  // >
+  //   sjkdbfkbsdfhbshjdbfjsdhbfjshdbfjhsbdfjhsbdfj
+  // </motion.div>;
+
+  const mentionCatchPhraseH1 = {
+    hidden: { y: -30, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5, delay: 0.3, ease: [0, 0, 0.58, 1] },
+    },
+  };
+
+  const motionCatchPhraseSpan = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.5, delay: 1.5, ease: [0, 0, 0.58, 1] },
+    },
+  };
+
+  const motionDevelopper = {
+    hidden: { x: 30, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.6, delay: 0.3, ease: [0, 0, 0.58, 1] },
+    },
+  };
+
+  const motionIAmFree = {
+    hidden: { x: -30, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.5, delay: 0.4, ease: [0, 0, 0.58, 1] },
+    },
+  };
+
   return (
     <section id="Home" className="home">
       <div className="catch-phrase">
-        <h1>
-          Hi , I am <span>Jean-Charles</span> <br /> Front-End Developper
-        </h1>
+        <motion.h1
+          variants={mentionCatchPhraseH1}
+          initial="hidden"
+          animate="visible"
+          transition="transition"
+        >
+          Hi , I am{" "}
+          <motion.span
+            variants={motionCatchPhraseSpan}
+            initial="hidden"
+            animate="visible"
+          >
+            Jean-Charles
+          </motion.span>
+          <br /> Front-End Developper
+        </motion.h1>
         <p>
           I code Web Application and <br /> I love what I do
         </p>
@@ -49,7 +122,13 @@ const Profile = () => {
         <div className="profil-img_wrapper">
           <img src={profil} alt="Profil" />
         </div>
-        <div className="developper">
+        <motion.div
+          className="developper"
+          variants={motionDevelopper}
+          initial="hidden"
+          animate="visible"
+          transition="transition"
+        >
           <CheckCircleIcon
             sx={{ color: "#43597d", mx: 1, fontSize: 30 }}
             className="iAmFree-picto"
@@ -57,8 +136,14 @@ const Profile = () => {
           <div className="textWrapper">
             <h4>Web Developper</h4>
           </div>
-        </div>
-        <div className="iAmFree">
+        </motion.div>
+        <motion.div
+          className="iAmFree"
+          variants={motionIAmFree}
+          initial="hidden"
+          animate="visible"
+          transition="transition"
+        >
           <CheckCircleIcon
             sx={{ color: "#FFA600", mx: 1, fontSize: 30 }}
             className="iAmFree-picto"
@@ -67,10 +152,44 @@ const Profile = () => {
             <h4>Available</h4>
             <p>You can hire me now</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
 };
 
 export default Profile;
+
+// export default function App() {
+//   const animationControls = useAnimation();
+
+//   async function sequence() {
+//     await animationControls.start({ opacity: 1, duration: 2 });
+//     await animationControls.start({
+//       x: 100,
+//       transition: { delay: 0.5, duration: 0.5 },
+//     });
+//   }
+
+//   useEffect(() => {
+//     sequence();
+//   }, []);
+
+//   return (
+//     <div>
+//       <motion.div
+//         style={{
+//           width: 150,
+//           height: 150,
+//           borderRadius: 30,
+//           backgroundColor: "#fff",
+//           opacity: 0,
+//         }}
+//         animate={animationControls}
+//         // transition={{ duration: 1 }}
+//       >
+//         sjkdbfkbsdfhbshjdbfjsdhbfjshdbfjhsbdfjhsbdfj
+//       </motion.div>
+//     </div>
+//   );
+// }

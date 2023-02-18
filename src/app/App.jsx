@@ -1,15 +1,15 @@
 // import "./App.css";
 // import Header from "../components/Header";
-import Aos from "aos";
+// import Aos from "aos";
 import { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import DesktopNav from "../components/Header";
 import Profile from "../components/home";
 
 function App() {
-  useEffect(() => {
-    Aos.init();
-  });
+  // useEffect(() => {
+  //   Aos.init();
+  // });
 
   return (
     <>
