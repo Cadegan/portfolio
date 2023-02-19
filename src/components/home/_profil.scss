@@ -1,33 +1,73 @@
 .home {
     display: flex;
-    justify-content: space-around;
+    height: 100vh;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 4rem;
     position: relative;
-    height: 100vh;
+    gap: 12rem;
+
+
 }
 
-.catch-phrase span {
-    color: #FFA600;
+.home::before {
+    content: "";
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    background: #FFA600;
+    opacity: 0.2;
+    border-radius: 30% 70% 33% 67% / 47% 69% 31% 53%;
+
+}
+
+.home::after {
+    content: "";
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 45%;
+    left: -2rem;
+    background: #43597d;
+    opacity: 0.2;
+    border-radius: 85% 15% 38% 62% / 49% 65% 35% 51%;
+    // z-index: -1;
+}
+
+.catch-phrase {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    span {
+        color: #FFA600;
+    }
+}
+
+.profil {
+    position: relative;
 }
 
 .profil-img_wrapper {
     position: relative;
-    // height: 300px;
-    width: 300px;
-    // overflow: hidden;
-    // border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    width: 350px;
 
     &::before {
         content: "";
         position: absolute;
         width: 95%;
-        height: 400px;
+        height: 440px;
         background:
             #FFA600;
         opacity: .6;
-        top: 50%;
-        left: 60%;
+        top: 44%;
+        left: 43%;
         transform: translate(-50%, -50%);
         z-index: -20;
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
@@ -57,13 +97,13 @@
 
 .iAmFree {
     display: flex;
-    top: 25%;
-    right: 34%;
+    top: 5%;
+    left: -35%;
 }
 
 .developper {
-    right: 7%;
-    bottom: 30%;
+    right: 0;
+    bottom: 10%;
 }
 
 .profil-img_wrapper img {

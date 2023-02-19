@@ -1,1 +1,1 @@
-.heading{display:flex;justify-content:center;align-items:center;font-size:32px}.heading::before,.heading::after{content:"";width:70px;height:3px;background-color:#e5c046}.heading::before{margin-right:30px}.heading::after{margin-left:30px}
+.heading-wrapper{display:flex;justify-content:center;align-items:center;gap:2rem}.heading__text{justify-content:center;align-items:center;font-size:32px}.heading__before,.heading__after{content:"";width:70px;height:3px;background-color:#ffa600}

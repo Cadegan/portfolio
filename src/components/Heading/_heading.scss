@@ -1,22 +1,23 @@
-.heading {
+.heading-wrapper {
+    // margin-top: 100px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.heading__text {
+    // display: flex;
     justify-content: center;
     align-items: center;
     font-size: 32px;
 }
 
-.heading::before,
-.heading::after {
+.heading__before,
+.heading__after {
     content: '';
     width: 70px;
     height: 3px;
-    background-color: #e5c046;
-}
+    background-color: #FFA600;
 
-.heading::before {
-    margin-right: 30px;
-}
-
-.heading::after {
-    margin-left: 30px;
 }
