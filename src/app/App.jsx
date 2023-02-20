@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <DesktopNav></DesktopNav>
         <main>
-          {/* <Profile></Profile> */}
+          <Profile></Profile>
           <About></About>
           <section id="services">
             <h1>Services</h1>

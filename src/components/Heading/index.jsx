@@ -10,7 +10,7 @@ const headingVariants = {
     // x: 0,
     transition: {
       duration: 0.3,
-      delay: 0.4,
+      delay: 0.6,
       ease: cubicBezier(0.17, 0.55, 0.55, 1),
     },
   },
@@ -24,7 +24,7 @@ const beforeVariant = {
   visible: {
     x: 0,
     opacity: 0.6,
-    transition: { duration: 0.4, ease: cubicBezier(0.17, 0.55, 0.55, 1) },
+    transition: { duration: 0.6, ease: cubicBezier(0.17, 0.55, 0.55, 1) },
   },
 };
 
@@ -36,7 +36,7 @@ const afterVariant = {
   visible: {
     x: 0,
     opacity: 0.6,
-    transition: { duration: 0.4, ease: cubicBezier(0.17, 0.55, 0.55, 1) },
+    transition: { duration: 0.6, ease: cubicBezier(0.17, 0.55, 0.55, 1) },
   },
 };
 
@@ -47,13 +47,15 @@ const Heading = ({ titleName }) => {
         className="heading__before"
         variants={beforeVariant}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.9 }}
       />
       <motion.div
         className="heading__text"
         variants={headingVariants}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.9 }}
       >
         <h1>{titleName}</h1>
       </motion.div>
@@ -61,7 +63,8 @@ const Heading = ({ titleName }) => {
         className="heading__after"
         variants={afterVariant}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.9 }}
       />
     </div>
   );
