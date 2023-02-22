@@ -58,9 +58,7 @@ const Heading = ({ titleName }) => {
         viewport={{ once: true, amount: 0.5, margin: "0px 0px -120px 0px" }}
       >
         <h1>
-          <span style={{ color: "#FFA600", opacity: "0.8" }}>
-            {titleName.charAt(0)}
-          </span>
+          <span>{titleName.charAt(0)}</span>
           {titleName.slice(1)}
         </h1>
       </motion.div>

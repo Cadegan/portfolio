@@ -74,7 +74,7 @@ const Profile = () => {
             variant="outlined"
             sx={{
               boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.03)",
-              backgroundColor: "white",
+              backgroundColor: "none",
               borderColor: "#43597d",
               color: "#43597d",
               "&:hover": {
