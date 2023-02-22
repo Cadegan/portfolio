@@ -1,7 +1,7 @@
 {
+  "homepage": "https://Cadegan.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://Cadegan.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "yarn-upgrade-all": "^0.7.2"
   }
 }
