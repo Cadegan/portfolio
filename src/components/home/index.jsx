@@ -4,30 +4,6 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { motion } from "framer-motion";
 
 const Profile = () => {
-  // const animationControls = useAnimation();
-
-  // async function sequence() {
-  //   await animationControls.start({ opacity: 1, duration: 2 });
-  //   await animationControls.start({
-  //     x: 100,
-  //     transition: { delay: 0.5, duration: 0.5 },
-  //   });
-  // }
-
-  // <motion.div
-  //   style={{
-  //     width: 150,
-  //     height: 150,
-  //     borderRadius: 30,
-  //     backgroundColor: "#fff",
-  //     opacity: 0,
-  //   }}
-  //   animate={animationControls}
-  //   // transition={{ duration: 1 }}
-  // >
-  //   sjkdbfkbsdfhbshjdbfjsdhbfjshdbfjhsbdfjhsbdfj
-  // </motion.div>;
-
   const mentionCatchPhraseH1 = {
     hidden: { y: -30, opacity: 0 },
     visible: {
@@ -172,37 +148,3 @@ const Profile = () => {
 };
 
 export default Profile;
-
-// export default function App() {
-//   const animationControls = useAnimation();
-
-//   async function sequence() {
-//     await animationControls.start({ opacity: 1, duration: 2 });
-//     await animationControls.start({
-//       x: 100,
-//       transition: { delay: 0.5, duration: 0.5 },
-//     });
-//   }
-
-//   useEffect(() => {
-//     sequence();
-//   }, []);
-
-//   return (
-//     <div>
-//       <motion.div
-//         style={{
-//           width: 150,
-//           height: 150,
-//           borderRadius: 30,
-//           backgroundColor: "#fff",
-//           opacity: 0,
-//         }}
-//         animate={animationControls}
-//         // transition={{ duration: 1 }}
-//       >
-//         sjkdbfkbsdfhbshjdbfjsdhbfjshdbfjhsbdfjhsbdfj
-//       </motion.div>
-//     </div>
-//   );
-// }

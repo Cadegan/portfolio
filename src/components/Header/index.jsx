@@ -7,16 +7,16 @@ import { makeStyles } from "@mui/styles";
 
 const links = [
   {
-    label: "Section 1",
-    path: "#home",
+    label: "About me",
+    path: "#about",
   },
   {
-    label: "Section 2",
-    path: "#services",
+    label: "Experiences",
+    path: "#experiences",
   },
   {
-    label: "Section 3",
-    path: "#testimonial",
+    label: "My projects",
+    path: "#projects",
   },
 ];
 

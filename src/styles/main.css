@@ -45,6 +45,7 @@ main {
   height: 100vh;
   justify-content: space-evenly;
   align-items: center;
+  top: 2vh;
   position: relative;
   gap: 12rem;
 }

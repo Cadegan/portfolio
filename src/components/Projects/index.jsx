@@ -1,9 +1,9 @@
 import Heading from "../Heading";
 
-const About = () => {
+const Projects = () => {
   return (
-    <section id="about">
-      <Heading titleName={"About me"}></Heading>
+    <section id="projects">
+      <Heading titleName={"My projects"}></Heading>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, nam!
         Iure officia aut esse tempore accusantium explicabo? Corporis deleniti
@@ -35,4 +35,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Projects;
