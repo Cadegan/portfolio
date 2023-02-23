@@ -1,36 +1,50 @@
+import { motion, cubicBezier } from "framer-motion";
 import Heading from "../Heading";
+import profil from "../../assets/profil.jpg";
+import { Button } from "@mui/material";
+
+const motionProfilImgWrapper = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.3, delay: 0.1, ease: [0, 0, 0.58, 1] },
+  },
+};
 
 const About = () => {
   return (
     <section id="about">
       <Heading titleName={"About me"}></Heading>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, nam!
-        Iure officia aut esse tempore accusantium explicabo? Corporis deleniti
-        ipsa fuga quas aut neque dicta nostrum laboriosam, iusto ullam minima
-        est porro, totam saepe. Facilis aliquid praesentium, voluptates rem
-        quibusdam sequi numquam illo eius adipisci eaque, necessitatibus
-        consectetur, labore vero et ipsum. Officiis, ea vero. Praesentium, et.
-        Enim, nostrum illo. Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Vero, nam! Iure officia aut esse tempore accusantium explicabo?
-        Corporis deleniti ipsa fuga quas aut neque dicta nostrum laboriosam,
-        iusto ullam minima est porro, totam saepe. Facilis aliquid praesentium,
-        voluptates rem quibusdam sequi numquam illo eius adipisci eaque,
-        necessitatibus consectetur, labore vero et ipsum. Officiis, ea vero.
-        Praesentium, et. Enim, nostrum illo. Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Vero, nam! Iure officia aut esse tempore
-        accusantium explicabo? Corporis deleniti ipsa fuga quas aut neque dicta
-        nostrum laboriosam, iusto ullam minima est porro, totam saepe. Facilis
-        aliquid praesentium, voluptates rem quibusdam sequi numquam illo eius
-        adipisci eaque, necessitatibus consectetur, labore vero et ipsum.
-        Officiis, ea vero. Praesentium, et. Enim, nostrum illo. Lorem ipsum
-        dolor sit, amet consectetur adipisicing elit. Vero, nam! Iure officia
-        aut esse tempore accusantium explicabo? Corporis deleniti ipsa fuga quas
-        aut neque dicta nostrum laboriosam, iusto ullam minima est porro, totam
-        saepe. Facilis aliquid praesentium, voluptates rem quibusdam sequi
-        numquam illo eius adipisci eaque, necessitatibus consectetur, labore
-        vero et ipsum. Officiis, ea vero. Praesentium, et. Enim, nostrum illo.
-      </p>
+      <div className="about_wrapper">
+        <div
+          className="about-img_wrapper"
+          variants={motionProfilImgWrapper}
+          initial="hidden"
+          animate="visible"
+        >
+          <img src={profil} alt="Profil" />
+        </div>
+        <motion.div className="about-speech">
+          <h1>Developing With a Passion</h1>
+          <p>
+            With 11 years of experience in administration/HR and IT fields, I
+            have had the opportunity to manage various web development projects
+            that have strengthened my passion for this sector and fueled my
+            determination to pursue a career in this field.
+          </p>
+          <Button
+            variant="contained"
+            color="warning"
+            sx={{
+              boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.03)",
+              backgroundColor: "#FFA600",
+              m: 2,
+            }}
+          >
+            Contact me
+          </Button>
+        </motion.div>
+      </div>
     </section>
   );
 };
