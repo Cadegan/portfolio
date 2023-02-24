@@ -1,4 +1,4 @@
-import { motion, cubicBezier, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Heading from "../Heading";
 import profil from "../../assets/profil.jpg";
 import { Button } from "@mui/material";
@@ -19,6 +19,7 @@ const About = () => {
     offset: ["start end", "end start"],
   });
   // let y = useTransform(scrollYProgress, [0, 1], ["10%", "-10%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
 
   return (
     <section id="about">
@@ -35,7 +36,7 @@ const About = () => {
         <motion.div
           className="about-speech"
           style={{
-            y: useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]),
+            y: textY,
           }}
         >
           <h1>Developing With a Passion</h1>
