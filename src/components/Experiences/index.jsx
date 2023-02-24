@@ -3,7 +3,7 @@ import Heading from "../Heading";
 const Experiences = () => {
   return (
     <section id="experiences">
-      <Heading titleName={"Experiences"}></Heading>
+      <Heading titleName={"Skills"}></Heading>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, nam!
         Iure officia aut esse tempore accusantium explicabo? Corporis deleniti
