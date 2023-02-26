@@ -1,9 +1,45 @@
+import { useEffect, useState } from "react";
 import Heading from "../Heading";
+import ActionAreaCard from "./Card";
+import axios from "axios";
+// import mokedData from "/projects.json";
 
 const Projects = () => {
+  const [data, setData] = useState(null);
+  const [isLoading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await axios.get("/projects.json");
+        const data = await response.data;
+        setData(data.project);
+      } catch (err) {
+        console.log(err);
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
+    };
+    getData();
+  }, []);
+
   return (
     <section id="projects">
       <Heading titleName={"My projects"}></Heading>
+      {data &&
+        data.map(({ id, title, description, picture, gitHub, demo }) => (
+          <ActionAreaCard
+            id={id}
+            key={id}
+            title={title}
+            description={description}
+            picture={picture}
+            gitHub={gitHub}
+            demo={demo}
+          ></ActionAreaCard>
+        ))}
       <p>
         https://github.com/Cadegan/portfolio.git
         (https://cadegan.github.io/portfolio/)

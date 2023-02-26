@@ -1,0 +1,20 @@
+{
+  "project": [
+    {
+      "id": "1",
+      "title": "Booki",
+      "description": "Turn a prototype into a website with HTML & CSS",
+      "picture": "/assets/images/1.jpg",
+      "gitHub": "https://github.com/Cadegan/projet2.git",
+      "demo": "https://cadegan.github.io/projet2/"
+    },
+    {
+      "id": "2",
+      "title": "ohMyFood",
+      "description": "Make a web page dynamic with CSS animations",
+      "picture": "/assets/images/2.jpg",
+      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
+      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
+    }
+  ]
+}

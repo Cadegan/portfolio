@@ -1,103 +1,48 @@
+// export const Card = () => {
+//   <div className="wrappCard"></div>;
+// };
+// import CardMediaPicture from "../../../assets/booking.jpg";
+
 import * as React from "react";
-import { memo, useRef } from "react";
-import { motion, useMotionValue } from "framer-motion";
-import { Link } from "react-router-dom";
-import { useInvertedBorderRadius } from "../utils/use-inverted-border-radius";
-import { CardData } from "../types";
-import { ContentPlaceholder } from "./ContentPlaceholder";
-import { Title } from "./Title";
-import { Image } from "./Image";
-import { openSpring, closeSpring } from "./animations";
-import { useScrollConstraints } from "../utils/use-scroll-constraints";
-import { useWheelScroll } from "../utils/use-wheel-scroll";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { Button, CardActionArea, CardActions } from "@mui/material";
 
-interface Props extends CardData {
-  isSelected: boolean;
-  history: {
-    push: (route: string) => void,
-  };
+export default function ActionAreaCard({
+  title,
+  description,
+  picture,
+  gitHub,
+  demo,
+}) {
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image={picture}
+          alt="Card picture"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {description}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary" href={gitHub} target="_blank">
+          Github
+        </Button>
+        <Button size="small" color="primary" href={demo} target="_blank">
+          Demo
+        </Button>
+      </CardActions>
+    </Card>
+  );
 }
-
-const dismissDistance = 150;
-
-export const Card = memo(
-  ({
-    isSelected,
-    id,
-    title,
-    category,
-    history,
-    pointOfInterest,
-    backgroundColor,
-  }: Props) => {
-    const y = useMotionValue(0);
-    const zIndex = useMotionValue(isSelected ? 2 : 0);
-
-    const inverted = useInvertedBorderRadius(20);
-
-    const cardRef = useRef(null);
-    const constraints = useScrollConstraints(cardRef, isSelected);
-
-    function checkSwipeToDismiss() {
-      y.get() > dismissDistance && history.push("/");
-    }
-
-    function checkZIndex(latest) {
-      if (isSelected) {
-        zIndex.set(2);
-      } else if (!isSelected && latest.scaleX < 1.01) {
-        zIndex.set(0);
-      }
-    }
-
-    const containerRef = useRef(null);
-    useWheelScroll(
-      containerRef,
-      y,
-      constraints,
-      checkSwipeToDismiss,
-      isSelected
-    );
-
-    return (
-      <li ref={containerRef} className={`card`}>
-        <Overlay isSelected={isSelected} />
-        <div className={`card-content-container ${isSelected && "open"}`}>
-          <motion.div
-            ref={cardRef}
-            className="card-content"
-            style={{ ...inverted, zIndex, y }}
-            layoutTransition={isSelected ? openSpring : closeSpring}
-            drag={isSelected ? "y" : false}
-            dragConstraints={constraints}
-            onDrag={checkSwipeToDismiss}
-            onUpdate={checkZIndex}
-          >
-            <Image
-              id={id}
-              isSelected={isSelected}
-              pointOfInterest={pointOfInterest}
-              backgroundColor={backgroundColor}
-            />
-            <Title title={title} category={category} isSelected={isSelected} />
-            <ContentPlaceholder />
-          </motion.div>
-        </div>
-        {!isSelected && <Link to={id} className={`card-open-link`} />}
-      </li>
-    );
-  },
-  (prev, next) => prev.isSelected === next.isSelected
-);
-
-const Overlay = ({ isSelected }) => (
-  <motion.div
-    initial={false}
-    animate={{ opacity: isSelected ? 1 : 0 }}
-    transition={{ duration: 0.2 }}
-    style={{ pointerEvents: isSelected ? "auto" : "none" }}
-    className="overlay"
-  >
-    <Link to="/" />
-  </motion.div>
-);
