@@ -1,0 +1,1 @@
+.projectsContainer{display:grid;grid-template-columns:1fr 1fr 1fr;grid-column-gap:20px;grid-row-gap:20px;justify-items:stretch;align-items:stretch}.MuiCard-root{display:flex;flex-direction:column;justify-content:space-between;border-radius:15px}

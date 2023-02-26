@@ -22,7 +22,7 @@ const About = () => {
   const textY = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
 
   return (
-    <section id="about">
+    <section className="about">
       <Heading titleName={"About me"}></Heading>
       <div className="about_wrapper" ref={ref}>
         <div

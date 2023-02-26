@@ -8,7 +8,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import { Button, CardActionArea, CardActions, CardHeader } from "@mui/material";
 
 export default function ActionAreaCard({
   title,
@@ -18,8 +18,15 @@ export default function ActionAreaCard({
   demo,
 }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+    <Card
+      sx={{
+        maxWidth: 345,
+        borderRadius: 3,
+        boxShadow: "3px 3px 6px rgba(0, 0, 0, 0.07)",
+      }}
+    >
+      <CardActionArea href={demo} target="_blank">
+        <CardHeader title={title}></CardHeader>
         <CardMedia
           component="img"
           height="140"
@@ -27,9 +34,6 @@ export default function ActionAreaCard({
           alt="Card picture"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {title}
-          </Typography>
           <Typography variant="body2" color="text.secondary">
             {description}
           </Typography>

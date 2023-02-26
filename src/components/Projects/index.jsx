@@ -26,20 +26,23 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects">
+    <section className="projects">
       <Heading titleName={"My projects"}></Heading>
-      {data &&
-        data.map(({ id, title, description, picture, gitHub, demo }) => (
-          <ActionAreaCard
-            id={id}
-            key={id}
-            title={title}
-            description={description}
-            picture={picture}
-            gitHub={gitHub}
-            demo={demo}
-          ></ActionAreaCard>
-        ))}
+      <div className="projectsContainer">
+        {data &&
+          data.map(({ id, title, description, picture, gitHub, demo }) => (
+            <ActionAreaCard
+              id={id}
+              key={id}
+              title={title}
+              description={description}
+              picture={picture}
+              gitHub={gitHub}
+              demo={demo}
+            ></ActionAreaCard>
+          ))}
+      </div>
+
       <p>
         https://github.com/Cadegan/portfolio.git
         (https://cadegan.github.io/portfolio/)

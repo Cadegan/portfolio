@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import About from "../components/About";
-import Experiences from "../components/Experiences";
+import Skills from "../components/Skills";
 import DesktopNav from "../components/Header";
 import Profile from "../components/home";
 import Projects from "../components/Projects";
@@ -13,7 +13,7 @@ function App() {
         <main>
           <Profile></Profile>
           <About></About>
-          <Experiences></Experiences>
+          <Skills></Skills>
           <Projects></Projects>
         </main>
       </BrowserRouter>
