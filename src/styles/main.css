@@ -239,6 +239,10 @@ main {
   border-radius: 15px;
 }
 
+.MuiPaper-root {
+  border-radius: 15px;
+}
+
 .skillsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

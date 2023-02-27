@@ -25,116 +25,44 @@
       "demo": "https://cadegan.github.io/JeanCharlesMaurice_4_GameOn-website-FR/"
     },
     {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
+      "id": "5",
+      "title": "Fisheye",
+      "description": "Build an accessible website for a photographers' platform",
+      "picture": "portfolio/images/5.jpg",
+      "gitHub": "https://github.com/Cadegan/Front-End-Fisheye.git",
+      "demo": "https://cadegan.github.io/Front-End-Fisheye/index.html"
     },
     {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
+      "id": "6",
+      "title": "Les petits plats",
+      "description": "Create a cooking recipe website",
+      "picture": "portfolio/images/6.jpg",
+      "gitHub": "https://github.com/Cadegan/P11-front-end-search-engine.git",
+      "demo": "https://cadegan.github.io/P11-front-end-search-engine/"
     },
     {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
+      "id": "7",
+      "title": "Billed app",
+      "description": "Debug and test an HR SaaS",
+      "picture": "portfolio/images/e-jest.svg",
+      "gitHub": "https://github.com/Cadegan/Billed-app-FR-Front.git",
+      "demo": "https://github.com/Cadegan/Billed-app-FR-Front.git"
     },
     {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
+      "id": "8",
+      "title": "Learn Home",
+      "description": "Define the needs for a tutoring app",
+      "picture": "portfolio/images/8.jpg",
+      "gitHub": "https://github.com/Cadegan/Learn-Home.git",
+      "demo": "https://github.com/Cadegan/Learn-Home.git"
     },
     {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
-    },
-    {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
-    },
-    {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
-    },
-    {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
-    },
-    {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
-    },
-    {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
-    },
-    {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
-    },
-    {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
-    },
-    {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
-    },
-    {
-      "id": "2",
-      "title": "ohMyFood",
-      "description": "Make a web page dynamic with CSS animations",
-      "picture": "portfolio/images/2.jpg",
-      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
-      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/"
+      "id": "9",
+      "title": "Kasa",
+      "description": "Create an apartment rental site between people",
+      "picture": "portfolio/images/9.jpg",
+      "gitHub": "https://github.com/Cadegan/kassa",
+      "demo": "https://cadegan.github.io/kassa"
     }
   ]
 }
