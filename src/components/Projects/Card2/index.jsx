@@ -18,7 +18,7 @@ const Card2 = ({ title, description, details, picture, gitHub, demo }) => {
         ></div>
         <div className="card__content">
           <div className="card__title">{title}</div>
-          <p className="card__text">{description}</p>
+          <p className="card__description_text">{description}</p>
           <div className="button__wrapper">
             <Button
               variant="contained"
