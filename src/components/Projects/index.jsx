@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Heading from "../Heading";
 import ActionAreaCard from "./Card";
 import axios from "axios";
+import Card2 from "./Card2";
 // import mokedData from "/projects.json";
 
 const Projects = () => {
@@ -28,20 +29,25 @@ const Projects = () => {
   return (
     <section className="projects">
       <Heading titleName={"My projects"}></Heading>
-      <div className="projectsContainer">
+      <ul className="cards">
         {data &&
-          data.map(({ id, title, description, picture, gitHub, demo }) => (
-            <ActionAreaCard
-              id={id}
-              key={id}
-              title={title}
-              description={description}
-              picture={picture}
-              gitHub={gitHub}
-              demo={demo}
-            ></ActionAreaCard>
-          ))}
-      </div>
+          data.map(
+            ({ id, title, description, details, picture, gitHub, demo }) => (
+              <Card2
+                id={id}
+                key={id}
+                title={title}
+                description={description}
+                details={details}
+                picture={picture}
+                gitHub={gitHub}
+                demo={demo}
+              ></Card2>
+            )
+          )}
+      </ul>
+
+      {/* <Card2></Card2> */}
 
       <p>
         https://github.com/Cadegan/portfolio.git

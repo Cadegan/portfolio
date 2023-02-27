@@ -22,17 +22,18 @@ export default function ActionAreaCard({
       sx={{
         maxWidth: 345,
         borderRadius: 3,
-        boxShadow: "3px 3px 6px rgba(0, 0, 0, 0.07)",
+        // boxShadow: "3px 3px 6px rgba(0, 0, 0, 0.07)",
+        boxShadow: "0 20px 40px -14px rgba(0, 0, 0, 0.25)",
       }}
     >
       <CardActionArea href={demo} target="_blank">
-        <CardHeader title={title}></CardHeader>
         <CardMedia
           component="img"
           height="140"
           image={picture}
           alt="Card picture"
         />
+        <CardHeader title={title}></CardHeader>
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             {description}
