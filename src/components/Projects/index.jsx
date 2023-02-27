@@ -30,20 +30,22 @@ const Projects = () => {
       <Heading titleName={"My projects"}></Heading>
       <ul className="cards">
         {data &&
-          data.map(
-            ({ id, title, description, details, picture, gitHub, demo }) => (
-              <Card2
-                id={id}
-                key={id}
-                title={title}
-                details={details}
-                description={description}
-                picture={picture}
-                gitHub={gitHub}
-                demo={demo}
-              ></Card2>
+          data
+            .map(
+              ({ id, title, description, details, picture, gitHub, demo }) => (
+                <Card2
+                  id={id}
+                  key={id}
+                  title={title}
+                  details={details}
+                  description={description}
+                  picture={picture}
+                  gitHub={gitHub}
+                  demo={demo}
+                ></Card2>
+              )
             )
-          )}
+            .reverse()}
       </ul>
     </section>
   );
