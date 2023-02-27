@@ -1,0 +1,153 @@
+{
+  "project": [
+    {
+      "id": "2",
+      "title": "Booki",
+      "description": "Turn a prototype into a website with HTML & CSS",
+      "picture": "portfolio/images/2.jpg",
+      "gitHub": "https://github.com/Cadegan/projet2.git",
+      "demo": "https://cadegan.github.io/projet2/",
+      "details": [
+        "Study and cutting of the prototype",
+        "Converting a prototype into HTML and CSS",
+        "W3C validation"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "ohMyFood",
+      "description": "Build a web page dynamic with CSS animations",
+      "picture": "portfolio/images/3.jpg",
+      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_3_02122021.git",
+      "demo": "https://cadegan.github.io/JeanCharlesMaurice_3_02122021/",
+      "details": [
+        "Implementation of advanced graphic CSS effects, Sass",
+        "Ensure the graphic consistency of a website",
+        "Use a version management system to monitor the project and its hosting"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "GameOn",
+      "description": "Build a landing page with Javascript",
+      "picture": "portfolio/images/4.jpg",
+      "gitHub": "https://github.com/Cadegan/JeanCharlesMaurice_4_GameOn-website-FR.git",
+      "demo": "https://cadegan.github.io/JeanCharlesMaurice_4_GameOn-website-FR/",
+      "details": ["Programming a subscription form in JavaScript"]
+    },
+    {
+      "id": "5",
+      "title": "Fisheye",
+      "description": "Build an accessible website for a photographers' platform",
+      "picture": "portfolio/images/5.jpg",
+      "gitHub": "https://github.com/Cadegan/Front-End-Fisheye.git",
+      "demo": "https://cadegan.github.io/Front-End-Fisheye/index.html",
+      "details": [
+        "Managing events on a site with JavaScript",
+        "Ensuring the accessibility of a website",
+        "Write maintainable JavaScript code",
+        "Develop a modular web application with design patterns"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Les petits plats",
+      "description": "Build a cooking recipe website",
+      "picture": "portfolio/images/6.jpg",
+      "gitHub": "https://github.com/Cadegan/P11-front-end-search-engine.git",
+      "demo": "https://cadegan.github.io/P11-front-end-search-engine/",
+      "details": [
+        "Develop a search algorithm in JavaScript",
+        "Build an algorithmic flowchart in draw.io",
+        "Write a feature investigation form",
+        "Perform efficiency tests with JSben"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Billed app",
+      "description": "Debug and test an HR SaaS",
+      "picture": "portfolio/images/e-jest.svg",
+      "gitHub": "https://github.com/Cadegan/Billed-app-FR-Front.git",
+      "demo": "https://github.com/Cadegan/Billed-app-FR-Front.git",
+      "details": [
+        "Write an end-to-end test plan",
+        "Writing integration tests with JavaScript (Jest)",
+        "Writing unit tests with JavaScript",
+        "Debugging a web application with the Chrome Debugger"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Learn Home",
+      "description": "Define the needs for a tutoring app",
+      "picture": "portfolio/images/8.jpg",
+      "gitHub": "https://github.com/Cadegan/Learn-Home.git",
+      "demo": "https://github.com/Cadegan/Learn-Home.git",
+      "details": [
+        "Contribute to a project using an agile methodology",
+        "Create a model for a client on Figma",
+        "Model a technical solution for a client",
+        "Identify the needs of the application from a technical specification",
+        "Create a use case diagram",
+        "Write user stories"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Kasa",
+      "description": "Build an apartment rental site between people",
+      "picture": "portfolio/images/9.jpg",
+      "gitHub": "https://github.com/Cadegan/kassa",
+      "demo": "https://cadegan.github.io/kassa",
+      "details": [
+        "Develop a web application with React and React Router",
+        "Build components with React"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Sportsee",
+      "description": "Build a sports coaching website",
+      "picture": "portfolio/images/10.jpg",
+      "gitHub": "https://github.com/Cadegan/sportsee.git",
+      "demo": "https://github.com/Cadegan/sportsee.git",
+      "details": [
+        "Develop advanced graphical elements with Recharts",
+        "Produce technical documentation for an application (JsDoc)",
+        "Integration of Proptypes",
+        "Management of asynchronous calls and promises"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Argent Bank",
+      "description": "Create a React web application for an authentication system for banking users",
+      "picture": "portfolio/images/11.jpg",
+      "gitHub": "https://github.com/Cadegan/p13-bank.git",
+      "demo": "https://github.com/Cadegan/p13-bank.git",
+      "details": [
+        "Create the complete and responsive web application with React",
+        "Use Redux and Redux Toolkit to manage the state of the whole application",
+        "Authenticate to an API",
+        "Interacting with an API",
+        "Modeling an API with Swagger"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Argent Bank",
+      "description": "Migrating a jQuery library to React",
+      "picture": "portfolio/images/12.jpg",
+      "gitHub": "https://github.com/Cadegan/projet14-Wealth_Health_modal.git",
+      "demo": "https://cadegan.github.io/projet14-Wealth_Health_modal",
+      "details": [
+        "Refactoring an application to reduce technical debt",
+        "Programming in JavaScript with functional programming",
+        "Analyze the performance of a web application",
+        "Design an application with the 'MUI' library",
+        "Managing forms with the 'React Hook Form' library"
+      ]
+    }
+  ]
+}

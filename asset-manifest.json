@@ -1,16 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d37971a0.css",
-    "main.js": "/portfolio/static/js/main.3f47ca77.js",
+    "main.css": "/portfolio/static/css/main.f259e870.css",
+    "main.js": "/portfolio/static/js/main.b49d8a31.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/profil.jpg": "/portfolio/static/media/profil.56654a1e51e3bfce1ff4.jpg",
+    "static/media/profil.jpg": "/portfolio/static/media/profil.966460da48558c4fa49c.jpg",
+    "static/media/d-draw-io.svg": "/portfolio/static/media/d-draw-io.a8c16746dda5a4b68831.svg",
+    "static/media/b-sass.svg": "/portfolio/static/media/b-sass.8a31eb07aebbd019aa48.svg",
+    "static/media/e-jest.svg": "/portfolio/static/media/e-jest.e29a420c5681550982b0.svg",
+    "static/media/aa-CSS3.svg": "/portfolio/static/media/aa-CSS3.2b35953cfe4ca23cf241.svg",
+    "static/media/d-figma.svg": "/portfolio/static/media/d-figma.4efb72f1dd36bb7fd451.svg",
+    "static/media/adobe-photoshop.svg": "/portfolio/static/media/adobe-photoshop.f86354a64fc7691b8e0d.svg",
+    "static/media/adobe-lightroom.svg": "/portfolio/static/media/adobe-lightroom.cd11f544d2c12373ab8e.svg",
+    "static/media/b-redux.svg": "/portfolio/static/media/b-redux.80f123df1e0af5768d70.svg",
+    "static/media/adobe-illustrator.svg": "/portfolio/static/media/adobe-illustrator.5c3f68085eea4e51cbb0.svg",
+    "static/media/a-HTML5.svg": "/portfolio/static/media/a-HTML5.fd1401927d0bc8e721ff.svg",
+    "static/media/aaa-javascript.svg": "/portfolio/static/media/aaa-javascript.3410b1bf7d311d477c41.svg",
+    "static/media/c-material-ui.svg": "/portfolio/static/media/c-material-ui.aa255ecb27163770f840.svg",
+    "static/media/b-react.svg": "/portfolio/static/media/b-react.7f8058bdd1633068462e.svg",
     "index.html": "/portfolio/index.html",
-    "main.d37971a0.css.map": "/portfolio/static/css/main.d37971a0.css.map",
-    "main.3f47ca77.js.map": "/portfolio/static/js/main.3f47ca77.js.map",
+    "static/media/c-framer-motion.svg": "/portfolio/static/media/c-framer-motion.42079b198f23c0eb8b05.svg",
+    "main.f259e870.css.map": "/portfolio/static/css/main.f259e870.css.map",
+    "main.b49d8a31.js.map": "/portfolio/static/js/main.b49d8a31.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d37971a0.css",
-    "static/js/main.3f47ca77.js"
+    "static/css/main.f259e870.css",
+    "static/js/main.b49d8a31.js"
   ]
 }
