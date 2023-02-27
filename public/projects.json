@@ -6,7 +6,12 @@
       "description": "Turn a prototype into a website with HTML & CSS",
       "picture": "portfolio/images/2.jpg",
       "gitHub": "https://github.com/Cadegan/projet2.git",
-      "demo": "https://cadegan.github.io/projet2/"
+      "demo": "https://cadegan.github.io/projet2/",
+      "details": [
+        "Study and cutting of the prototype",
+        "Converting a prototype into HTML and CSS",
+        "W3C validation"
+      ]
     },
     {
       "id": "3",

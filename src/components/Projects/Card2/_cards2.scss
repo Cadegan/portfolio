@@ -19,19 +19,19 @@ img {
     vertical-align: middle;
 }
 
-.btn {
-    background-color: white;
-    border: 1px solid $gray-light;
-    //border-radius: 1rem;
-    color: $gray-dark;
-    padding: 0.5rem;
-    text-transform: lowercase;
-}
+// .btn {
+    //     background-color: white;
+    //     border: 1px solid $gray-light;
+    //     //border-radius: 1rem;
+    //     color: $gray-dark;
+    //     padding: 0.5rem;
+    //     text-transform: lowercase;
+    // }
 
-.btn--block {
-    display: block;
-    width: 100%;
-}
+// .btn--block {
+    //     display: block;
+    //     width: 100%;
+    // }
 
 .cards {
     display: flex;
@@ -63,6 +63,7 @@ img {
     flex-direction: column;
     overflow: hidden;
     width: 100%;
+    justify-content: space-between;
 
     &:hover {
         .card__image {
@@ -143,4 +144,9 @@ img {
     font-size: 0.875rem;
     line-height: 1.5;
     margin: 1.25rem;
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: space-evenly;
 }
