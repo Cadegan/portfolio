@@ -47,6 +47,20 @@ const Profile = () => {
     },
   };
 
+  // function DownloadButton() {
+
+  function downloadFile() {
+    const fileUrl =
+      "https://drive.google.com/file/d/1ozJfcMLfjz5IUhsx8P625qhjd-R7rY_J/view?usp=share_link"; // lien vers le fichier PDF
+    const fileName = "CV_Maurice_Jean-Charles.pdf"; // nom du fichier PDF
+    const element = document.createElement("a");
+    element.href = fileUrl;
+    element.download = fileName;
+    element.target = "_blank";
+    document.body.appendChild(element);
+    element.click();
+  }
+
   return (
     <section id="home" className="home">
       <div className="catch-phrase">
@@ -71,6 +85,9 @@ const Profile = () => {
         </p>
         <div className="homeButtons">
           <Button
+            onClick={downloadFile}
+            // href="../../assets/CV_Maurice_Jean-Charles.pdf"
+            target="_blank"
             variant="outlined"
             sx={{
               boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.03)",
@@ -87,6 +104,7 @@ const Profile = () => {
             Download CV
           </Button>
           <Button
+            href="mailto:jeancharlesmaurice@gmail.com"
             variant="contained"
             color="warning"
             sx={{

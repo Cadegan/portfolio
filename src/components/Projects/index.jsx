@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Heading from "../Heading";
-import ActionAreaCard from "./Card";
 import axios from "axios";
 import Card2 from "./Card2";
 // import mokedData from "/projects.json";
@@ -37,12 +36,6 @@ const Projects = () => {
                 id={id}
                 key={id}
                 title={title}
-                // content={
-                //   data &&
-                //   data.map((description, index) => (
-                //     <li key={index}>{description}</li>
-                //   ))
-                // }
                 details={details}
                 description={description}
                 picture={picture}

@@ -14,6 +14,7 @@ const Experiences = () => {
       <Heading titleName={"Skills"} />
       <div className="skillsContainer">
         {images.map((image, index) => (
+          // eslint-disable-next-line jsx-a11y/img-redundant-alt
           <img key={index} src={image} alt={`Image ${index}`} />
         ))}
       </div>

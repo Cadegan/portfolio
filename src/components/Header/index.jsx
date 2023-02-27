@@ -44,7 +44,6 @@ const DesktopNav = () => {
       <Box
         sx={{
           display: "flex",
-          // height: 70,
           width: "100%",
           alignItems: "center",
           justifyContent: "space-between",
@@ -81,6 +80,7 @@ const DesktopNav = () => {
             backgroundColor: "#FFA600",
             m: 2,
           }}
+          href="mailto:jeancharlesmaurice@gmail.com"
         >
           Contact me
         </Button>
