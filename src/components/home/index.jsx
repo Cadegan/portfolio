@@ -47,11 +47,9 @@ const Profile = () => {
     },
   };
 
-  // function DownloadButton() {
-
   function downloadFile() {
     const fileUrl =
-      "https://drive.google.com/file/d/1ozJfcMLfjz5IUhsx8P625qhjd-R7rY_J/view?usp=share_link"; // lien vers le fichier PDF
+      "https://drive.google.com/file/d/1tWY2G7Rd_Wow152o0DH1CTVFdfo_dfAl/view?usp=share_link"; // lien vers le fichier PDF
     const fileName = "CV_Maurice_Jean-Charles.pdf"; // nom du fichier PDF
     const element = document.createElement("a");
     element.href = fileUrl;
@@ -86,7 +84,6 @@ const Profile = () => {
         <div className="homeButtons">
           <Button
             onClick={downloadFile}
-            // href="../../assets/CV_Maurice_Jean-Charles.pdf"
             target="_blank"
             variant="outlined"
             sx={{
