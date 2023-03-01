@@ -48,9 +48,8 @@ const Profile = () => {
   };
 
   function downloadFile() {
-    const fileUrl =
-      "https://drive.google.com/file/d/1tWY2G7Rd_Wow152o0DH1CTVFdfo_dfAl/view?usp=share_link"; // lien vers le fichier PDF
-    const fileName = "CV_Maurice_Jean-Charles.pdf"; // nom du fichier PDF
+    const fileUrl = "";
+    const fileName = "CV.pdf";
     const element = document.createElement("a");
     element.href = fileUrl;
     element.download = fileName;

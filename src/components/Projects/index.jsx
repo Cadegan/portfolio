@@ -12,7 +12,10 @@ const Projects = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get("/projects.json");
+        // const response = await axios.get("/projects.json");
+        const response = await axios.get(
+          "https://cadegan.github.io/Data/projects.json"
+        );
         const data = await response.data;
         setData(data.project);
       } catch (err) {
