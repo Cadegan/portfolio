@@ -19,20 +19,6 @@ img {
     vertical-align: middle;
 }
 
-// .btn {
-//     background-color: white;
-//     border: 1px solid $gray-light;
-//     //border-radius: 1rem;
-//     color: $gray-dark;
-//     padding: 0.5rem;
-//     text-transform: lowercase;
-// }
-
-// .btn--block {
-//     display: block;
-//     width: 100%;
-// }
-
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +82,10 @@ img {
     text-align: left;
     display: none;
     overflow: scroll;
-    // transition: all 1s cubic-bezier(.43, .41, .22, .91);
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 
     p {
         margin-top: 0;
@@ -105,6 +94,7 @@ img {
     }
 
     &::-webkit-scrollbar {
+        display: none;
         width: 0;
         background-color: transparent;
     }
@@ -132,23 +122,15 @@ img {
 
     &::before {
         content: "";
-        // background-color: #2c3e50;
         opacity: 0;
         display: block;
         height: 100%;
         transition: all 0.5s cubic-bezier(.43, .41, .22, .91);
-        // backdrop-filter: blur(50px);
         backdrop-filter: blur(20px);
         background-Color: #43597dae;
         box-Shadow: inset 0px 3px 10px 3px rgb(0 0 0 / 10%);
 
     }
-
-    // @media(min-width: 40rem) {
-    //     &::before {
-    //         padding-top: 66.6%; // 3:2 aspect ratio
-    //     }
-    // }
 }
 
 .card__title {
@@ -160,8 +142,6 @@ img {
 }
 
 .card__description_text {
-    // flex: 1 1 auto;
-    // font-size: 0.875rem;
     line-height: 1.5;
     margin: 1.5rem;
 }

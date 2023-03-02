@@ -1,53 +1,63 @@
-// export const Card = () => {
-//   <div className="wrappCard"></div>;
-// };
-// import CardMediaPicture from "../../../assets/booking.jpg";
+import { Button } from "@mui/material";
+import "./_cards.css";
 
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions, CardHeader } from "@mui/material";
-
-export default function ActionAreaCard({
-  title,
-  description,
-  picture,
-  gitHub,
-  demo,
-}) {
+const Card = ({ title, description, details, picture, gitHub, demo }) => {
   return (
-    <Card
-      sx={{
-        maxWidth: 345,
-        borderRadius: 3,
-        // boxShadow: "3px 3px 6px rgba(0, 0, 0, 0.07)",
-        boxShadow: "0 20px 40px -14px rgba(0, 0, 0, 0.25)",
-      }}
-    >
-      <CardActionArea href={demo} target="_blank">
-        <CardMedia
-          component="img"
-          height="140"
-          image={picture}
-          alt="Card picture"
-        />
-        <CardHeader title={title}></CardHeader>
-        <CardContent>
-          <Typography variant="body2" color="text.secondary">
-            {description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary" href={gitHub} target="_blank">
-          Github
-        </Button>
-        <Button size="small" color="primary" href={demo} target="_blank">
-          Demo
-        </Button>
-      </CardActions>
-    </Card>
+    <div className="cards__item">
+      <div className="card">
+        <div className="card__details_text">
+          {details &&
+            details.map((detail, index) => <p key={index}>{detail}</p>)}
+        </div>
+
+        <div
+          className="card__image"
+          src={picture}
+          style={{ backgroundImage: `url(${picture})` }}
+        ></div>
+        <div className="card__content">
+          <div className="card__title">{title}</div>
+          <p className="card__description_text">{description}</p>
+          <div className="button__wrapper">
+            <Button
+              variant="contained"
+              color="warning"
+              href={gitHub}
+              target="_blank"
+              sx={{
+                boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.03)",
+                backgroundColor: "#43597d",
+                color: "#FFFFFF",
+                "&:hover": {
+                  backgroundColor: "#FFA600",
+                },
+              }}
+            >
+              Github
+            </Button>
+            <Button
+              variant="outlined"
+              href={demo}
+              target="_blank"
+              sx={{
+                boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.03)",
+                backgroundColor: "none",
+                borderColor: "#43597d",
+                color: "#43597d",
+                "&:hover": {
+                  color: "white",
+                  borderColor: "#FFA600",
+                  backgroundColor: "#FFA600",
+                },
+              }}
+            >
+              Demo
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default Card;

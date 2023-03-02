@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Heading from "../Heading";
 import axios from "axios";
-import Card2 from "./Card2";
+import Card from "./Card";
+import Variants from "./Card-loading";
 // import mokedData from "/projects.json";
 
 const Projects = () => {
@@ -34,9 +35,11 @@ const Projects = () => {
       <ul className="cards">
         {data &&
           data
-            .map(
-              ({ id, title, description, details, picture, gitHub, demo }) => (
-                <Card2
+            .map(({ id, title, description, details, picture, gitHub, demo }) =>
+              isLoading ? (
+                <Variants key={id}></Variants>
+              ) : (
+                <Card
                   id={id}
                   key={id}
                   title={title}
@@ -45,7 +48,7 @@ const Projects = () => {
                   picture={picture}
                   gitHub={gitHub}
                   demo={demo}
-                ></Card2>
+                ></Card>
               )
             )
             .reverse()}
