@@ -18,7 +18,7 @@ const headingVariants = {
 
 const beforeVariant = {
   hidden: {
-    x: -80,
+    x: -30,
     opacity: 0,
   },
   visible: {
@@ -30,7 +30,7 @@ const beforeVariant = {
 
 const afterVariant = {
   hidden: {
-    x: 80,
+    x: 30,
     opacity: 0,
   },
   visible: {

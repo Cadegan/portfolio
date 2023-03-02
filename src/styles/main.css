@@ -175,7 +175,7 @@ section {
 .heading__text {
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .heading__before,
@@ -186,6 +186,14 @@ section {
   background-color: #FFA600;
 }
 
+@media screen and (max-width: 640px) {
+  .heading-wrapper {
+    justify-content: space-between;
+  }
+  .heading__text {
+    font-size: 1.5rem;
+  }
+}
 .about_wrapper {
   display: flex;
   align-items: center;
@@ -228,6 +236,11 @@ section {
   align-items: baseline;
 }
 
+@media screen and (max-width: 640px) {
+  .about_wrapper {
+    flex-direction: column;
+  }
+}
 .projectsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
