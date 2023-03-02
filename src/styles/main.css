@@ -35,6 +35,7 @@ section {
   margin: 1rem;
   color: #43597d;
   align-items: center;
+  text-decoration: none;
 }
 .logo .firstLetter {
   background-color: #FFA600;

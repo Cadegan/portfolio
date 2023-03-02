@@ -29,7 +29,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <Heading titleName={"My projects"}></Heading>
       <ul className="cards">
         {data &&

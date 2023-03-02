@@ -11,8 +11,8 @@ const links = [
     path: "#about",
   },
   {
-    label: "Experiences",
-    path: "#experiences",
+    label: "Skills",
+    path: "#skills",
   },
   {
     label: "My projects",
@@ -47,17 +47,18 @@ const DesktopNav = () => {
           width: "100%",
           alignItems: "center",
           justifyContent: "space-between",
-          backgroundColor: "white",
           overflow: "visible",
           position: "fixed",
           zIndex: 1000,
-          boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.03)",
+          backdropFilter: "blur(20px)",
+          backgroundColor: "rgba(255,255,255,0.72)",
+          boxShadow: "inset 0px -1px 1px #e7ebf060",
         }}
       >
-        <div className="logo">
+        <HashLink className="logo" to={"#home"} smooth>
           <span className="firstLetter">J</span>
           <span>ean-charles</span>
-        </div>
+        </HashLink>
         <nav>
           <Tabs value={value} className={classes.tabs} onChange={handleChange}>
             {links.map(({ label, path }) => (

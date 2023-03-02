@@ -10,7 +10,7 @@ const images = importAll(
 
 const Experiences = () => {
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <Heading titleName={"Skills"} />
       <div className="skillsContainer">
         {images.map((image, index) => (
