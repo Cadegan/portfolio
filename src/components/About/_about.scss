@@ -43,28 +43,6 @@
     }
 }
 
-// .about__after {
-//     content: "";
-//     position: absolute;
-//     height: 100%;
-//     width: 100%;
-//     top: -2%;
-//     left: 8%;
-//     border-radius: 10px;
-//     background:
-//         #FFA600;
-//     opacity: .6;
-//     z-index: -20;
-//     background-image: -webkit-linear-gradient(90deg,
-//             transparent 0%,
-//             transparent 50%,
-//             white 50%,
-//             white 100%),
-//         -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 50%, white 50%, white 100%);
-//     background-size: 0.2em 0.2em;
-// }
-
-
 .about-speech {
     width: 40%;
     display: flex;
@@ -75,5 +53,9 @@
 @media screen and (max-width: 640px) {
     .about_wrapper {
         flex-direction: column;
+    }
+
+    .about-speech {
+        width: auto;
     }
 }

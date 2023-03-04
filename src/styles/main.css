@@ -34,6 +34,17 @@ section {
   padding: 0 4rem;
 }
 
+@media only screen and (max-width: 900px) {
+  main {
+    margin-top: 6rem;
+  }
+  main > *:not(:first-child) {
+    margin-top: 5rem;
+  }
+  section {
+    padding: 0 2rem;
+  }
+}
 .logo {
   display: flex;
   cursor: pointer;
@@ -63,7 +74,7 @@ section {
 .home {
   display: flex;
   height: 100vh;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   top: 2vh;
   position: relative;
@@ -174,12 +185,31 @@ section {
 
 @media only screen and (max-width: 1024px) {
   .home {
-    gap: 6rem;
+    gap: 4rem;
   }
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 900px) {
   .home {
-    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .home::before {
+    display: none;
+  }
+  .profil-img_wrapper {
+    gap: 0rem;
+    width: 300px;
+  }
+  .iAmFree {
+    left: 0%;
+    top: 70%;
+  }
+  .developper {
+    bottom: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .catch-phrase h1 {
+    font-size: 1.8rem;
   }
 }
 .heading-wrapper {
@@ -256,6 +286,9 @@ section {
 @media screen and (max-width: 640px) {
   .about_wrapper {
     flex-direction: column;
+  }
+  .about-speech {
+    width: auto;
   }
 }
 .projectsContainer {
