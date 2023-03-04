@@ -9,8 +9,6 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 #root {
@@ -21,6 +19,11 @@ body {
 
 main {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+main > *:not(:first-child):not(:nth-child(2)) {
+  margin-top: 5rem;
 }
 
 section {
@@ -169,6 +172,16 @@ section {
   padding: 0px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .home {
+    gap: 6rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .home {
+    gap: 1rem;
+  }
+}
 .heading-wrapper {
   display: flex;
   justify-content: center;

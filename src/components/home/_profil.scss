@@ -122,3 +122,15 @@
     margin: 0px;
     padding: 0px;
 }
+
+@media only screen and (max-width: 1024px) {
+    .home {
+        gap: 6rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .home {
+        gap: 1rem;
+    }
+}
