@@ -35,12 +35,6 @@ section {
 }
 
 @media only screen and (max-width: 900px) {
-  main {
-    margin-top: 6rem;
-  }
-  main > *:not(:first-child) {
-    margin-top: 5rem;
-  }
   section {
     padding: 0 2rem;
   }
@@ -73,7 +67,7 @@ section {
 
 .home {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: space-between;
   align-items: center;
   top: 2vh;
@@ -185,29 +179,50 @@ section {
 
 @media only screen and (max-width: 1024px) {
   .home {
-    gap: 4rem;
+    gap: 0rem;
   }
 }
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
+  /* styles pour tablette en mode portrait */
   .home {
     flex-direction: column-reverse;
+    justify-content: space-evenly;
+    top: 0;
   }
   .home::before {
     display: none;
   }
   .profil-img_wrapper {
     gap: 0rem;
-    width: 300px;
+    width: 240px;
+  }
+  .profil-img_wrapper::before {
+    width: 100%;
+    height: 280px;
   }
   .iAmFree {
-    left: 0%;
-    top: 70%;
+    left: -27%;
+  }
+  .iAmFree * {
+    font-size: 0.7rem;
   }
   .developper {
-    bottom: 3%;
+    right: -8%;
+  }
+  .developper * {
+    font-size: 0.7rem;
+    right: -26%;
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .home {
+    min-height: 70vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .home {
+    min-height: 90vh;
+  }
   .catch-phrase h1 {
     font-size: 1.8rem;
   }
