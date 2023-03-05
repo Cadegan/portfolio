@@ -1,21 +1,10 @@
-/* body {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .mobileNavContainer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   width: 300px;
+  z-index: 99;
 }
 
 .background {
@@ -24,8 +13,10 @@
   left: 0;
   bottom: 0;
   width: 300px;
-  background: #ff6161;
-  z-index: -1;
+   /* backdrop-filter: blur(20px); */
+  /* background-Color: rgba(255, 166, 0, 0.1); */
+  /* box-Shadow: inset 0px -1px 1px #e7ebf060; */
+  z-index: 98;
 }
 
 .buttonMenuToggle {
@@ -61,18 +52,24 @@
 }
 
 .mobileNavContainer li {
+  height: 40px;
   list-style: none;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  /* border: 2px solid rgb(255, 166, 0); */
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  background-Color: #43597d;
+  color: white;
+  font-weight: 600;
+  /* box-Shadow: inset 0px -1px 1px #e7ebf060 */
 }
 
 .icon-placeholder {
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
-  flex: 40px 0;
+  flex: 30px 0;
   margin-right: 20px;
 }
 

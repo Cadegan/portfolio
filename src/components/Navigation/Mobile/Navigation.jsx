@@ -41,13 +41,12 @@ const links = [
 
 export const Navigation = () => (
   <motion.ul variants={variants} className="mobileNavContainer">
-    {links.map((index, item) => (
+    {links.map((item) => (
       <MenuItem
-        i={links}
-        key={index}
+        key={item.label}
         component={HashLink}
         icon={item.icon}
-        label={item.label}
+        text={item.label}
         to={item.path}
       />
     ))}
