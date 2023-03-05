@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import DesktopNav from "../components/Navigation";
-import Profile from "../components/home";
+import Profile from "../components/Profile";
 import Projects from "../components/Projects";
 import { Example } from "../components/Navigation/Mobile/Exemple";
 
@@ -10,8 +10,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <DesktopNav></DesktopNav>
-
+        {/* <DesktopNav></DesktopNav> */}
         <main>
           <Example></Example>
           <Profile></Profile>
