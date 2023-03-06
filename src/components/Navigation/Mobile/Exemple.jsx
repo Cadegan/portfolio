@@ -29,21 +29,21 @@ const sidebar = {
 };
 
 export const Example = () => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+  const [isVisible, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   // const { height } = useDimensions(containerRef);
 
   return (
     <motion.nav
       initial={false}
-      animate={isOpen ? "open" : "closed"}
+      animate={isVisible ? "open" : "closed"}
       // custom={height}
       ref={containerRef}
       className="mobileNavContainer"
     >
-      <motion.div className="background" variants={sidebar} />
-      <Navigation />
       <MenuToggle toggle={toggleOpen} />
+      <Navigation isVisible={isVisible} />
+      <motion.div className="background" variants={sidebar} />
     </motion.nav>
   );
 };

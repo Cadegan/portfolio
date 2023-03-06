@@ -1,5 +1,5 @@
 import * as React from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const variants = {
   open: {
@@ -10,25 +10,39 @@ const variants = {
     },
   },
   closed: {
-    y: 50,
-    opacity: 0,
     transition: {
       y: { stiffness: 1000 },
     },
   },
 };
 
-export const MenuItem = ({ icon, text }) => {
+export const MenuItem = ({ icon, text, isVisible }) => {
   return (
-    <motion.li
-      variants={variants}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      <div className="icon-placeholder">
-        <img src={icon} alt="" />
-      </div>
-      <div className="text-placeholder">{text}</div>
-    </motion.li>
+    <AnimatePresence>
+      {isVisible && (
+        <motion.li
+          variants={variants}
+          key={icon}
+          initial={{
+            y: 50,
+            opacity: 0,
+          }}
+          exit={{
+            y: 50,
+            opacity: 0,
+            transition: {
+              y: { stiffness: 1000 },
+            },
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <div className="icon-placeholder">
+            <img src={icon} alt="" />
+          </div>
+          <div className="text-placeholder">{text}</div>
+        </motion.li>
+      )}
+    </AnimatePresence>
   );
 };

@@ -9,7 +9,10 @@ import homeIcon from "../../../assets/home_icon.svg";
 
 const variants = {
   open: {
-    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+    transition: {
+      staggerChildren: 0.07,
+      delayChildren: 0.2,
+    },
   },
   closed: {
     transition: { staggerChildren: 0.05, staggerDirection: -1 },
@@ -39,7 +42,7 @@ const links = [
   },
 ];
 
-export const Navigation = () => (
+export const Navigation = ({ isVisible }) => (
   <motion.ul variants={variants} className="mobileNavContainer">
     {links.map((item) => (
       <MenuItem
@@ -47,7 +50,8 @@ export const Navigation = () => (
         component={HashLink}
         icon={item.icon}
         text={item.label}
-        to={item.path}
+        {...item}
+        isVisible={isVisible}
       />
     ))}
   </motion.ul>
