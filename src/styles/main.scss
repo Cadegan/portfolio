@@ -1,5 +1,6 @@
 @import "./global";
-@import "../components/Navigation/header";
+@import "../components/Navigation/Desktop/nav-desktop";
+@import "../components/Navigation/Mobile/nav-mobile";
 @import "../components/Profile/profil";
 @import "../components/Heading/heading";
 @import "../components/About/about";

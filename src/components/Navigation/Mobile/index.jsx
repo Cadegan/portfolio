@@ -1,10 +1,9 @@
 import * as React from "react";
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
-// import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./HamburgerMenu";
 import { Navigation } from "./Navigation";
-import "./styles.css";
+// import "./styles.css";
 
 const sidebar = {
   closed: {
@@ -28,7 +27,7 @@ const sidebar = {
   }),
 };
 
-export const Example = () => {
+export const MobileMenu = () => {
   const [isVisible, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   // const { height } = useDimensions(containerRef);

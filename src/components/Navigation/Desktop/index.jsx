@@ -22,6 +22,10 @@ const links = [
 
 const useStyles = makeStyles({
   tabs: {
+    "& .MuiTab-root": {
+      fontWeight: 600,
+      color: "#43597D",
+    },
     "& .MuiTabs-indicator": {
       // backgroundColor: "#FFA600",
       height: 0,
@@ -32,7 +36,7 @@ const useStyles = makeStyles({
   },
 });
 
-const DesktopNav = () => {
+const DesktopMenu = () => {
   const [value, setValue] = useState(0);
   const classes = useStyles();
   const handleChange = (event, newValue) => {
@@ -89,4 +93,4 @@ const DesktopNav = () => {
     </header>
   );
 };
-export default DesktopNav;
+export default DesktopMenu;

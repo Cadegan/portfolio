@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const variants = {
@@ -10,6 +10,8 @@ const variants = {
     },
   },
   closed: {
+    // y: 50,
+    // opacity: 0,
     transition: {
       y: { stiffness: 1000 },
     },

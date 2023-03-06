@@ -13,11 +13,6 @@
   left: 0;
   bottom: 0;
   width: 100vh;
-   /* backdrop-filter: blur(10px); */
-  /* background-Color: rgba(0, 0, 0, 0.15); */
-  /* background-color: rgba(0, 0, 0, 0.15); */
-  /* background: linear-gradient(rgba(67, 89, 125),rgba(67, 89, 125, 0.4)); */
-  /* box-Shadow: inset 0px -1px 1px #e7ebf060; */
   z-index: 98;
 }
 
@@ -62,14 +57,12 @@
   align-items: center;
   cursor: pointer;
   border-radius: 10px;
-  /* border-style: solid; */
   border: solid 0.1rem white;
   color: white;
   font-weight: 600;
 }
 
 .icon-placeholder {
-  /* border-radius: 50%; */
   flex: 25px 0;
   margin-left: 20px;
 }
@@ -78,23 +71,5 @@
  filter: brightness(0) invert(1);}
 
 .text-placeholder {
-  /* border-radius: 5px; */
-  /* width: 200px;
-  height: 20px; */
   flex: 1;
 }
-
-/* .refresh {
-  padding: 10px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-} */

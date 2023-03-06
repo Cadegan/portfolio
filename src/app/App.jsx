@@ -1,18 +1,18 @@
 import { BrowserRouter } from "react-router-dom";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import DesktopNav from "../components/Navigation";
+import DesktopMenu from "../components/Navigation/Desktop";
 import Profile from "../components/Profile";
 import Projects from "../components/Projects";
-import { Example } from "../components/Navigation/Mobile/Exemple";
+import { MobileMenu } from "../components/Navigation/Mobile";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <DesktopNav></DesktopNav> */}
+        {/* <DesktopMenu></DesktopMenu> */}
+        <MobileMenu></MobileMenu>
         <main>
-          <Example></Example>
           <Profile></Profile>
           <About></About>
           <Skills></Skills>
