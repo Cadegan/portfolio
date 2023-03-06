@@ -26,11 +26,7 @@ export const MenuItem = ({ icon, text }) => {
       whileTap={{ scale: 0.95 }}
     >
       <div className="icon-placeholder">
-        <img
-          src={icon}
-          alt=""
-          style={{ filter: "brightness(0) saturate(100%)" }}
-        />
+        <img src={icon} alt="" />
       </div>
       <div className="text-placeholder">{text}</div>
     </motion.li>

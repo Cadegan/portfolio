@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Path = ({
   strokeWidth = 3,
-  strokeColor = "hsl(0, 0%, 18%)",
+  strokeColor = "#FFFFFF",
   strokeLinecap = "round",
   ...rest
 }) => (
