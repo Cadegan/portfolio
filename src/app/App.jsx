@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <DesktopMenu></DesktopMenu> */}
+        <DesktopMenu></DesktopMenu>
         <MobileMenu></MobileMenu>
         <main>
           <Profile></Profile>

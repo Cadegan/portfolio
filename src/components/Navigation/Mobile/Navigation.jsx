@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HashLink, NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 import aboutIcon from "../../../assets/about_icon.svg";
@@ -23,7 +23,7 @@ const links = [
   {
     id: 0,
     label: "Home",
-    path: "#home",
+    path: "#",
     icon: homeIcon,
   },
   {

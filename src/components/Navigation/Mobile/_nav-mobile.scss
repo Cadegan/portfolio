@@ -76,3 +76,9 @@
         }
     }
 }
+
+@media screen and (min-width: 769px) {
+    .mobileNavContainer {
+        display: none;
+    }
+}
