@@ -59,7 +59,7 @@ const DesktopMenu = () => {
           boxShadow: "inset 0px -1px 1px #e7ebf060",
         }}
       >
-        <HashLink className="logo" to={"#home"} smooth>
+        <HashLink className="logo" to={"#"} smooth>
           <span className="firstLetter">J</span>
           <span>ean-charles</span>
         </HashLink>
