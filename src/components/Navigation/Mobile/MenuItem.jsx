@@ -18,13 +18,13 @@ const variants = {
   },
 };
 
-export const MenuItem = ({ icon, text, isVisible }) => {
+export const MenuItem = ({ id, icon, text, isVisible }) => {
   return (
     <AnimatePresence>
       {isVisible && (
         <motion.li
           variants={variants}
-          key={icon}
+          key={id}
           initial={{
             y: 50,
             opacity: 0,

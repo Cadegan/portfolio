@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HashLink } from "react-router-hash-link";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 import aboutIcon from "../../../assets/about_icon.svg";
@@ -21,21 +21,25 @@ const variants = {
 
 const links = [
   {
+    id: 0,
     label: "Home",
     path: "#home",
     icon: homeIcon,
   },
   {
+    id: 1,
     label: "About me",
     path: "#about",
     icon: aboutIcon,
   },
   {
+    id: 2,
     label: "Skills",
     path: "#skills",
     icon: skillsIcon,
   },
   {
+    id: 3,
     label: "My projects",
     path: "#projects",
     icon: projectsIcon,
@@ -43,16 +47,11 @@ const links = [
 ];
 
 export const Navigation = ({ isVisible }) => (
-  <motion.ul variants={variants} className="mobileNavContainer">
-    {links.map((item) => (
-      <MenuItem
-        key={item.label}
-        component={HashLink}
-        icon={item.icon}
-        text={item.label}
-        {...item}
-        isVisible={isVisible}
-      />
+  <motion.ul variants={variants}>
+    {links.map(({ id, label, path, icon }) => (
+      <HashLink smooth to={path} key={id} style={{ textDecoration: "none" }}>
+        <MenuItem id={id} icon={icon} text={label} isVisible={isVisible} />
+      </HashLink>
     ))}
   </motion.ul>
 );

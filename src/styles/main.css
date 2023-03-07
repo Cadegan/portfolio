@@ -108,6 +108,7 @@ section {
 .mobileNavContainer ul li {
   height: 40px;
   list-style: none;
+  text-decoration: none;
   margin-bottom: 20px;
   display: flex;
   align-items: center;

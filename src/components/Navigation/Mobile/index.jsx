@@ -1,8 +1,9 @@
 import * as React from "react";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./HamburgerMenu";
 import { Navigation } from "./Navigation";
+import { useCallback } from "react";
 // import "./styles.css";
 
 const sidebar = {
@@ -30,13 +31,46 @@ const sidebar = {
 export const MobileMenu = () => {
   const [isVisible, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
-  // const { height } = useDimensions(containerRef);
+
+  const escapeKeyListener = useCallback(
+    (event) => {
+      if (event.key === "Escape") {
+        toggleOpen(false);
+      }
+    },
+    [toggleOpen]
+  );
+
+  const outsideClickListener = useCallback(
+    (event) => {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target)
+      ) {
+        toggleOpen();
+      }
+    },
+    [containerRef, toggleOpen]
+  );
+
+  useEffect(() => {
+    if (isVisible) {
+      document.addEventListener("mousedown", outsideClickListener);
+      document.addEventListener("keydown", escapeKeyListener);
+    } else {
+      document.removeEventListener("mousedown", outsideClickListener);
+      document.removeEventListener("keydown", escapeKeyListener);
+    }
+    return () => {
+      document.removeEventListener("mousedown", outsideClickListener);
+      document.removeEventListener("keydown", escapeKeyListener);
+    };
+  }, [isVisible, escapeKeyListener, outsideClickListener]);
 
   return (
     <motion.nav
       initial={false}
       animate={isVisible ? "open" : "closed"}
-      // custom={height}
       ref={containerRef}
       className="mobileNavContainer"
     >
