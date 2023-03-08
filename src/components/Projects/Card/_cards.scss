@@ -124,9 +124,9 @@ img {
         opacity: 0;
         display: block;
         height: 100%;
-        transition: all 0.5s cubic-bezier(.25, .1, .25, 1);
-        backdrop-filter: blur(20px);
-        background-Color: #43597dae;
+        transition: all 0.3s cubic-bezier(.25, .1, .25, 1);
+        // backdrop-filter: blur(20px);
+        background-Color: #43597d;
         box-Shadow: inset 0px 3px 10px 3px rgb(0 0 0 / 10%);
 
     }

@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useRef, useEffect } from "react";
 import { motion, useCycle } from "framer-motion";
-import { MenuToggle } from "./HamburgerMenu";
-import { Navigation } from "./Navigation";
+import { MenuToggle } from "./MenuToggle";
+import { NavigationLinks } from "./NavigationLinks";
 import { useCallback } from "react";
 // import "./styles.css";
 
@@ -31,6 +31,10 @@ const sidebar = {
 export const MobileMenu = () => {
   const [isVisible, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
+
+  const handleClick = useCallback(() => {
+    toggleOpen();
+  }, [toggleOpen]);
 
   const escapeKeyListener = useCallback(
     (event) => {
@@ -75,7 +79,7 @@ export const MobileMenu = () => {
       className="mobileNavContainer"
     >
       <MenuToggle toggle={toggleOpen} />
-      <Navigation isVisible={isVisible} />
+      <NavigationLinks isVisible={isVisible} handleClick={handleClick} />
       <motion.div className="background" variants={sidebar} />
     </motion.nav>
   );

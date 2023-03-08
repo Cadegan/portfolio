@@ -46,11 +46,20 @@ const links = [
   },
 ];
 
-export const Navigation = ({ isVisible }) => (
+export const NavigationLinks = ({ isVisible, handleClick }) => (
   <motion.ul variants={variants}>
     {links.map(({ id, label, path, icon }) => (
       <HashLink smooth to={path} key={id} style={{ textDecoration: "none" }}>
-        <MenuItem id={id} icon={icon} text={label} isVisible={isVisible} />
+        <MenuItem
+          id={id}
+          icon={icon}
+          text={label}
+          isVisible={isVisible}
+          onClick={(event) => {
+            // console.log("MenuItem clicked");
+            handleClick(event);
+          }}
+        />
       </HashLink>
     ))}
   </motion.ul>

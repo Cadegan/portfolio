@@ -18,7 +18,7 @@ const variants = {
   },
 };
 
-export const MenuItem = ({ id, icon, text, isVisible }) => {
+export const MenuItem = ({ id, icon, text, isVisible, onClick }) => {
   return (
     <AnimatePresence>
       {isVisible && (
@@ -38,6 +38,7 @@ export const MenuItem = ({ id, icon, text, isVisible }) => {
           }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={onClick}
         >
           <div className="icon-placeholder">
             <img src={icon} alt="" />
