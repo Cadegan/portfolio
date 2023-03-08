@@ -1,14 +1,29 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { cubicBezier, motion, useScroll, useTransform } from "framer-motion";
 import Heading from "../Heading";
 import profil from "../../assets/profil.jpg";
 import { Button } from "@mui/material";
 import { useRef } from "react";
 
+const motionAboutWrapper = {
+  hidden: {
+    y: 0,
+    opacity: 0,
+  },
+  visible: {
+    y: -40,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: cubicBezier(0.17, 0.55, 0.55, 1),
+    },
+  },
+};
+
 const motionProfilImgWrapper = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { duration: 0.3, delay: 0.1, ease: [0, 0, 0.58, 1] },
+    transition: { duration: 0.3, ease: [0, 0, 0.58, 1] },
   },
 };
 
@@ -18,12 +33,23 @@ const About = () => {
     target: ref,
     offset: ["start end", "end start"],
   });
-  const textY = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
+  const textY = useTransform(scrollYProgress, [0.1, 1], ["20%", "-20%"]);
 
   return (
     <section className="about" id="about">
       <Heading titleName={"About me"}></Heading>
-      <div className="about_wrapper" ref={ref}>
+      <motion.div
+        className="about_wrapper"
+        ref={ref}
+        variants={motionAboutWrapper}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          once: true,
+          amount: 0.25,
+          margin: "0px 0px 0px 0px",
+        }}
+      >
         <div
           className="about-img_wrapper"
           variants={motionProfilImgWrapper}
@@ -58,7 +84,7 @@ const About = () => {
             Contact me
           </Button>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };
