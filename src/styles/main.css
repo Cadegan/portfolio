@@ -174,14 +174,16 @@ section {
   z-index: -1;
 }
 
-.catch-phrase h1 {
+.catch-phrase {
+  width: 350px;
+}
+
+.Typewriter {
   font-size: 2rem;
+  height: 6rem;
 }
-.catch-phrase p {
-  font-size: 1rem;
-}
-.catch-phrase span {
-  color: #FFA600;
+.Typewriter .Typewriter__wrapper {
+  font-weight: 700;
 }
 
 .profil {

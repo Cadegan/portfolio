@@ -36,16 +36,28 @@
 }
 
 .catch-phrase {
-    h1 {
-        font-size: 2rem;
-    }
+    width: 350px;
+    // h1 {
+    //     font-size: 2rem;
+    // }
 
-    p {
-        font-size: 1rem;
-    }
+    // p {
+    //     font-size: 1rem;
+    // }
+    // span {
+    //     color: #FFA600;
+    // }
 
-    span {
-        color: #FFA600;
+}
+
+.Typewriter {
+    // text-align: left;
+    // width: 100%;
+    font-size: 2rem;
+    height: 6rem;
+
+    .Typewriter__wrapper {
+        font-weight: 700;
     }
 }
 
@@ -182,9 +194,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .main {
-        // margin-top: 0rem;
-    }
+    // .main {
+    //     margin-top: 0rem;
+    // }
 
     .home {
         min-height: 90vh;

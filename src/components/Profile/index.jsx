@@ -2,25 +2,9 @@ import { Button } from "@mui/material";
 import profil from "../../assets/profil.jpg";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 const Profile = () => {
-  const mentionCatchPhraseH1 = {
-    hidden: { y: -30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.5, delay: 0.3, ease: [0, 0, 0.58, 1] },
-    },
-  };
-
-  const motionCatchPhraseSpan = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { duration: 0.5, delay: 1.5, ease: [0, 0, 0.58, 1] },
-    },
-  };
-
   const motionDevelopper = {
     hidden: { x: 30, opacity: 0 },
     visible: {
@@ -61,22 +45,34 @@ const Profile = () => {
   return (
     <section id="home" className="home">
       <div className="catch-phrase">
-        <motion.h1
-          variants={mentionCatchPhraseH1}
-          initial="hidden"
-          animate="visible"
-          transition="transition"
-        >
-          Hi , I am{" "}
-          <motion.span
-            variants={motionCatchPhraseSpan}
-            initial="hidden"
-            animate="visible"
-          >
-            Jean-Charles
-          </motion.span>
-          <br /> Front-End Developper
-        </motion.h1>
+        <Typewriter
+          options={{
+            deleteSpeed: 15,
+          }}
+          onInit={(typewriter) => {
+            typewriter
+              .pauseFor(800)
+              .changeDelay(60)
+              .typeString("Hi, ")
+              .pauseFor(500)
+              .typeString("<span>I am Jean-Charles</span><br />")
+              .pauseFor(300)
+              .typeString('<span style="color: #264DE4"> CSS</span>')
+              .pauseFor(600)
+              .deleteChars(3)
+              .typeString('<span style="color: #ffd500"> JavaScript</span>')
+              .pauseFor(600)
+              .deleteChars(10)
+              .typeString('<span style="color: #5ED3F3"> React</span>')
+              .pauseFor(600)
+              .deleteChars(5)
+              .typeString(
+                '<span style="color: #FFA600">Front-End Developper</span>'
+              )
+              .pauseFor(1000)
+              .start();
+          }}
+        />
         <p>
           I code Web Application and <br /> I love what I do
         </p>
